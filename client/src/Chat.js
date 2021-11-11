@@ -4,7 +4,7 @@ import uuid from 'uuid/v4'
 
 
 const myId = uuid()
-const socket = io('http://localhost:8080')
+const socket = io('https://chatsocketpaiva.herokuapp.com/')
 socket.on('connect', () => console.log('[IO] Connect => A new connection has been established'))
 
 export const Chat = () => {
